@@ -4,6 +4,8 @@ This project demonstrates how to set up a CI/CD pipeline using GitLab to automat
 
 **GitLab CI/CD Repository:** [ Automate Deploying to AWS Using Terraform with GitLab CI/CD Pipeline](https://gitlab.com/terraform4703751/automate-deploying-to-aws-using-terraform-with-gitlab-cicd-pipeline) 
 
+![Screenshot 2024-12-22 184409](https://github.com/user-attachments/assets/4cbea7fc-85ad-42b4-8b1a-2603512de65a)
+
 ### Features
 * Automated infrastructure provisioning on AWS Cloud using Terraform.
 * Modular Terraform code to manage VPC, Subnets, Security Groups, and EC2 instances.
@@ -60,4 +62,3 @@ This .gitlab-ci.yml file automates the Terraform workflow in GitLab CI/CD with f
 * Ensure validate and plan stages run automatically.
 * Use manual approval for apply and destroy stages.
   
-![Screenshot 2024-12-22 184409](https://github.com/user-attachments/assets/3c2886bd-f52c-4581-a6bf-030d2cc2c452)
