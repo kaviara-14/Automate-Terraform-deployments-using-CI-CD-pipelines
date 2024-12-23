@@ -42,9 +42,18 @@ Parameterize modules using input variables to allow flexibility and reuse.
 
 ### 4. Create a GitLab Repository
 Push your Terraform project to a new GitLab repository.
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <your-repo-url>
+git push -u origin main
+
+```
 
 ### 5. Configure CI/CD Pipeline
-Add a .gitlab-ci.yml file and add the pipeline code.This pipeline will have 4 different stages validate, plan, apply and destroy.These are the 4 stages we wanted to automate using CICD.
+This .gitlab-ci.yml file automates the Terraform workflow in GitLab CI/CD with four stages: validate, plan, apply, and destroy. It validates Terraform files, plans infrastructure changes, applies the changes, and allows manual destruction of the infrastructure. The pipeline runs on the master branch and for merge requests.
+
 
 ### 6.  Test Pipeline Stages
 * Trigger the pipeline from GitLab.
