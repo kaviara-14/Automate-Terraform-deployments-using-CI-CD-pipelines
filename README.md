@@ -31,7 +31,7 @@ terraform destroy -auto-approve
 ### 2. Modularize Infrastructure
 Split the Terraform code into reusable modules. For example, create separate modules for
 * **VPC:** Define networking components like subnets and routing tables.
-* **EC2 Instances:** Define compute instances with associated security groups.
+* **EC2 Instances:** Define compute instances with associated security groups and deploy ec2 instance in private subnet
 
 Parameterize modules using input variables to allow flexibility and reuse.
 
